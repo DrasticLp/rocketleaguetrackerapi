@@ -1,0 +1,26 @@
+{
+  "name": "rocketleaguetrackerapi",
+  "version": "1.0.7",
+  "description": "RocketLeagueTrackerAPI",
+  "main": "index.js",
+  "keywords": [
+    "Rocket",
+    "League",
+    "Rocketleague",
+    "trackerapi",
+    "tracker",
+    "tracker.gg",
+    "rltracker",
+    "rl",
+    "rocketleaguetracker"
+  ],
+  "author": "DrasticLp",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "canvas": "^2.8.0",
+    "fs": "^0.0.1-security",
+    "request": "^2.88.2",
+    "webp-converter": "^2.3.3"
+  }
+}
