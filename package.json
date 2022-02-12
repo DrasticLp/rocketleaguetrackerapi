@@ -1,6 +1,6 @@
 {
   "name": "rocketleaguetrackerapi",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "RocketLeagueTrackerAPI",
   "main": "index.js",
   "keywords": [
@@ -22,5 +22,9 @@
     "fs": "^0.0.1-security",
     "request": "^2.88.2",
     "webp-converter": "^2.3.3"
+  },
+  "repository": {
+	  "type": "git",
+	  "url": "https://github.com/DrasticLp/rocketleaguetrackerapi.git"
   }
 }
