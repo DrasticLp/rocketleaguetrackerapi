@@ -61,8 +61,6 @@ class RLUser {
         return new Promise(async (resolve, reject) => {
             const data = await this.getData();
 
-            console.log(data);
-
             try {
                 let rankName = data["segments"][id]["stats"]["tier"]["metadata"]["name"];
                 let heloValue = data["segments"][id]["stats"]["rating"]["value"];
