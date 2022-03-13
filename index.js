@@ -61,15 +61,24 @@ class RLUser {
         return new Promise(async (resolve, reject) => {
             const data = await this.getData();
 
-            let rankName = data["segments"][id]["stats"]["tier"]["metadata"]["name"];
-            let heloValue = data["segments"][id]["stats"]["rating"]["value"];
-            let imgUrl = data["segments"][id]["stats"]["tier"]["metadata"]["iconUrl"];
+            try {
+                let rankName = data["segments"][id]["stats"]["tier"]["metadata"]["name"];
+                let heloValue = data["segments"][id]["stats"]["rating"]["value"];
+                let imgUrl = data["segments"][id]["stats"]["tier"]["metadata"]["iconUrl"];
+    
+                resolve({
+                    rank: rankName,
+                    elo: heloValue,
+                    icon: imgUrl
+                });
+            } catch {
+                resolve({
+                    rank: "Unranked",
+                    elo: 0,
+                    icon: "https://trackercdn.com/cdn/tracker.gg/rocket-league/ranks/s4-0.png"
+                });
+            }
 
-            resolve({
-                rank: rankName,
-                elo: heloValue,
-                icon: imgUrl
-            });
         });
     }
 
