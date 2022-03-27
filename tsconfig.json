@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "outDir": "./",
+        "module": "commonjs",
+        "target": "ES6",
+        "lib": [
+            "es2016",
+            "dom"
+        ],
+        "esModuleInterop": true,
+    },
+    "files": [
+        "index.ts",
+    ]
+}
